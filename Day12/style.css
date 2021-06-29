@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+#size{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+/*Desktop*/
+@media screen and (max-width:1200px){
+    .container{
+        background: purple;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width:768px){
+    .container{
+        background: pink;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width:768px){
+    .container{
+        background: green;
+    }
+}

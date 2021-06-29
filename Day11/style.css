@@ -1,0 +1,68 @@
+.rappers{
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.rappers,td{
+    border: 1px solid gray;
+}
+
+.rappers tr:nth-child(even){
+    background-color: aqua;
+}
+
+.rappers tr:nth-child(5){
+    background-color: deeppink;
+}
+
+tfoot{
+    background: deepskyblue;
+}
+
+/*Expenses Table*/
+.expense{
+    width: 30%;
+    margin: 4% auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.expense,td{
+    border:1px solid red;
+}
+
+.expense thead{
+    background: grey;
+}
+
+/*Country  Table*/
+.country{
+    margin:6% auto;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.country,th,td{
+    border:1px solid green;
+}
+
+/*Production Table*/
+.colgroup{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.red{
+    background: red;
+}
+
+.pink{
+    background: pink;
+}
+
+.yellow{
+    background: yellow;
+}

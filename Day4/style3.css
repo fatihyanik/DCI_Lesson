@@ -1,0 +1,15 @@
+/*pseudo classes*/
+button{
+    background-color: chartreuse;
+}
+button:hover{
+    background-color: red;
+}
+
+input:focus{
+    background-color: darkgray;
+}
+
+a[href="#"]{
+    background-color:yellow;
+}

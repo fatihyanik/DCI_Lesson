@@ -1,0 +1,55 @@
+/*type selector*/
+
+h1{
+    color:red;
+}
+
+p{
+    color:blueviolet
+}
+
+/*class selector*/
+.coffeehouse2{
+    color:green;
+}
+
+/*id selector-unique*/
+#para1id{
+    color:blue;;
+}
+
+/*descendant selector*/
+a{
+    color:red;
+    font-size:xx-large;
+}
+
+div a{
+    background-color: rosybrown;
+}
+
+/*Direct child selector*/
+div > a{
+    background-color: rosybrown;
+}
+
+/*General sibling selector*/
+div ~ a{
+    background-color: seagreen;
+}
+
+/*adjacent sibling*/
+
+div + a{
+    background-color: seagreen;
+}
+
+/* or selector */
+div, p{
+    background-color: skyblue;
+}
+
+/*and selector*/
+div.mydiv{
+    background-color: springgreen;
+}

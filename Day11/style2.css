@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+
+input:checked[type="checkbox"]{
+    background-color: blue;
+}
+
+input[type="checkbox"]::before{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background:cadetblue;
+}
+
+input:checked[type="checkbox"]:before{
+    left:40px;
+}
+

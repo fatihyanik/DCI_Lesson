@@ -1,0 +1,29 @@
+/*.flex-container{
+    border: 2px solid black;
+  /*  height: 1000px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+*/
+/*
+.flexitem{
+    height: 15rem;
+    width: 15rem;
+    background-color: pink;
+    border: 2px solid black;
+}*/
+
+.flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    border: 2px solid red;
+}
+
+.flexitem-wrap {
+    height: 20rem;
+    width: 20rem;
+    flex-basis: 50%;
+    border: 2px solid black;
+    background-color: green;
+}

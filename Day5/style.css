@@ -1,0 +1,40 @@
+/* font implementation */
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');*/
+
+@font-face{
+    font-family:"myfont";
+    src:url(/Roboto/Roboto-Bold.ttf);
+}
+
+
+h1 {
+    font-family: 'myfont', sans-serif;
+    font-weight: bolder;
+    font-style:italic;
+    text-shadow: 2px 2px 8px red;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+   /* text-align: right;*/
+    text-indent: 20px;
+    line-height: 60px;
+    letter-spacing: 20px;
+    word-spacing: 5px;
+    text-transform:capitalize;
+}
+
+.fa-facebook{
+    color: blue;
+    font-size:50px ;
+}
+
+
+
+/* css positioning */
+/* display */
+/* transition */
+/* box-sizing */

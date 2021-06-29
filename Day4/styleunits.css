@@ -1,0 +1,39 @@
+/* css units*/
+/* pixels */
+
+/* absolute and relative units*/
+/* % */
+/* em and rem */
+/* 1 em=16px*/
+/* vh and vw */
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.inner{
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+}
+.outer{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+}
+h1{
+    font-size: 4em;
+}
+
+.header{
+    width:50vw;
+    height:50vh;
+    background-color: chartreuse;
+}
+
+.banner{
+    width:50vw;
+    height:50vh;
+    background-color:chocolate;
+}

@@ -1,0 +1,41 @@
+h2:hover{
+    color: red;
+}
+
+button:hover{
+    background-color: royalblue;
+}
+
+input:focus{
+    background-color: salmon;
+}
+
+p::selection{
+    background-color: seagreen;
+}
+
+p::before{
+    content:"Hello";
+}
+
+p::after{
+    content:"Hello";
+}
+
+a:active{
+    color:saddlebrown;
+}
+
+a:link{
+    color: orange;
+}
+
+a:visited{
+    color: green;
+}
+
+img:hover{
+    width:300px;
+    height: 300px;
+    box-shadow: 24px 14px 16px skyblue;
+}

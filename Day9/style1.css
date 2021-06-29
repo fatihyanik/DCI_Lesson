@@ -1,0 +1,90 @@
+:root{
+
+    /* branding colors */
+    --primary:green;
+    --secondary:red;
+    --tertiary:orange;
+
+    /* grey colors */
+    --gray-00:white;
+    --gray-20: #afaeb5;
+  --gray-40: #888790;
+  --gray-60: #626169;
+  --gray-80: #3d3c41;
+  --gray-100: #181819;
+}
+/* Applying border color and span color */
+.primary{
+    border: 1px solid var(--primary);
+}
+.primary>span{
+    background-color: var(--primary);
+}
+.secondary{
+    border: 1px solid var(--secondary);
+}
+.secondary>span{
+    background-color: var(--secondary);
+}
+.tertiary{
+    border: 1px solid var(--tertiary);
+}
+.tertiary>span{
+    background-color: var(--tertiary);
+}
+
+.gray0{
+    border: 1px solid black;
+}
+.gray0>span{
+    background-color: var(--gray-00);
+}
+.gray1{
+    border: 1px solid var(--gray-20)
+}
+.gray1>span{
+    background-color: var(--gray-20);
+}
+.gray2{
+    border: 1px solid var(--gray-40);
+}
+.gray2>span{
+    background-color: var(--gray-40);
+}
+.gray3{
+    border: 1px solid var(--gray-60);
+}
+.gray3>span{
+    background-color: var(--gray-60);
+}
+.gray4{
+    border: 1px solid var(--gray-80);
+}
+.gray4>span{
+    background-color: var(--gray-80);
+}
+.gray5{
+    border: 1px solid  var(--gray-100);
+}
+.gray5>span{
+    background-color: var(--gray-100);
+}
+
+/* applying style to the div inside the main class(first div) */
+
+.main>div{
+
+    width:100px;
+    display:inline-block;
+    height:120px;
+    margin: 6px 5px 3px 13px;
+    text-align: center;
+
+}
+/* applying style to the div inside the main class(second div span) */
+.main > div > span{
+display:block;
+height:80px;
+margin:5px;
+}
+

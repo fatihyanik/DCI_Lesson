@@ -1,0 +1,8 @@
+/*pseudo elements*/
+div::before{
+    content: "hello i am here"
+}
+
+div::after{
+    content: "hello i am here"
+}

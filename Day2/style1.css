@@ -1,0 +1,25 @@
+.blue{
+    color:blue !important;
+}
+#blueid{
+    color:darkred;
+}
+.red{
+    color:red;
+}
+
+.green{
+    color:rgb(191, 255, 0);
+}
+
+#yellowid{
+    color: yellow;
+}
+
+#blackid{
+    color: black;
+}
+
+#pinkid{
+    color:pink
+}

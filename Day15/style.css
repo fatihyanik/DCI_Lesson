@@ -1,0 +1,42 @@
+/* first usecase 3 column layout */
+
+.mainwrapper{
+    display:flex; 
+    flex-direction: column;
+    height:92vh;
+}
+
+header,footer{
+    padding:20px;
+    background-color: grey;
+    color: white;
+    /* width:100px; */
+}
+
+.subwrapper{
+    display:flex;
+    background: pink;
+    flex-grow: 1;
+
+}
+.col1{
+    background: lightblue;
+    flex-grow: 1;
+    order:3;
+}
+.col2{
+    background:green;
+    width:120px;
+    order:-1;
+}
+.col3{
+    background:olive;
+    width:120px;
+}
+.mediasub,.searchgroup{
+    display:flex;
+
+}
+input[type="text"]{
+    flex:1;
+}

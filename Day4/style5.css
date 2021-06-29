@@ -1,0 +1,15 @@
+li:last-of-type{
+    color: green;
+}
+
+.list1{
+    list-style: none;
+}
+
+li:nth-of-type(2){
+    background-color: cornflowerblue;
+}
+
+/*li:first-child, li:last-child{
+    background-color: red;
+}*/

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Elements</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/f/mvodrwdn" method="POST">
+    <header>Contact Form</header>
+    <!--fieldset is used to group several controls as well as labels within a web form-->
+    <fieldset>
+        <!--legend represent a caption for the content of its parent fieldset-->
+        <legend>Your details</legend>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+        <div>
+            <label for="secondname">Second Name</label>
+            <input type="text" name="secondname" id="secondname">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+    </fieldset>
+
+    <!--*********************************************************************-->
+    <fieldset>
+        <legend>Your Programming experience</legend>
+        <p>select your favorite language</p>
+        <!--radio button-->
+        <div>
+            <input type="radio" id="java" name="language" value="java"><label for="java">Java</label>
+        </div>
+        <div>
+            <input type="radio" id="html" name="language" value="html"><label for="html">HTML</label>
+        </div>
+        <div>
+            <input type="radio" id="css" name="language" value="css"><label for="css">CSS</label>
+        </div>
+        <!--check boxes-->
+        <p>What careers</p>
+        <div>
+            <input type="checkbox" id="careerwebdev" name="career" value="web developer"><label
+                for="careerwebdev">software developer</label>
+        </div>
+        <div>
+            <input type="checkbox" id="careerwebdev" name="career" value="web developer"><label
+                for="careerwebdev">software developer</label>
+        </div>
+        <div class="experience">
+            <label for="experience">tell us about your experience</label>
+            <textarea name="experience" id="experience" cols="30" rows="10"></textarea>
+        </div>
+    </fieldset>
+
+    <!--*********************************************************************-->
+    <div class="select">
+        <label for="reference">How did you find us</label>
+        <!--using select element-->
+        <select name="reference" id="reference">
+            <option value="internet">Internet</option>
+            <option value="internet">Internet</option>
+            <option value="internet">Internet</option>
+            <option value="internet">Internet</option>
+        </select>
+    </div>
+
+    <div class="button">
+        <button class="btn-submit">Apply now</button>
+    </div>
+</form>
+</body>
+
+</html>

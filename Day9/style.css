@@ -1,0 +1,27 @@
+/* General styling */
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.color{
+height: 100px;
+}
+
+.colorprimary{
+    background-color: aqua;
+}
+
+.colorsecondary{
+    background-color: blueviolet;
+}
+
+.graydarkest{
+    background-color: gray;
+}
+
+.gray{
+    background-color:rgb(38,39,39) ;
+}
+
+
+

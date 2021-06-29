@@ -1,0 +1,12 @@
+ul{
+    list-style: circle;
+}
+
+ol li{
+    list-style-type: disc;
+}
+
+h2{
+    color:aqua;
+    color:blue;
+}

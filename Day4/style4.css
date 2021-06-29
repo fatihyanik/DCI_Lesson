@@ -1,0 +1,10 @@
+li:first-child{
+    color: blue;
+}
+
+li:last-child{
+    color:coral;
+}
+li:nth-child(2){
+    color: yellowgreen;
+}

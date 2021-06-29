@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>The Html table element represents tabular data</h2>
+    <!--rapper Table-->
+    <table class="rappers">
+        <thead>
+            <tr>
+                <th colspan="2">Rappers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Snoop</td>
+                <td>Dogg</td>
+            </tr>
+            <tr>
+                <td>Ice</td>
+                <td>Cube</td>
+            </tr>
+            <tr>
+                <td>Marshall</td>
+                <td>Mathers</td>
+            </tr>
+            <tr>
+                <td>Samy</td>
+                <td>Deluxe</td>
+            </tr>
+            <tr>
+                <td>Eazy</td>
+                <td>DE</td>
+            </tr>
+            <tr>
+        <tfoot>
+            <td colspan="2">Madebyme</td>
+        </tfoot>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--Expenses Table-->
+    <!--The scope attribute specifies whether  
+    a header cell is a header for a column,row-->
+
+    <table class="expense">
+        <caption>
+            Corporate Yearly Expenditures
+        </caption>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th scope="col">Expenditures</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Staplers</th>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <th scope="row">Pencils</th>
+                <td>5000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Totals</th>
+                <td>4000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Countries Table-->
+    <table class="country">
+        <caption>vital information on Countries</caption>
+        <thead>
+            <tr>
+                <th scope="col">Countries</th>
+                <th scope="col">Capitals</th>
+                <th scope="col">Population</th>
+                <th scope="col">Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">USA</th>
+                <td>Washington</td>
+                <td>349.78 million</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <th scope="row">USA</th>
+                <td>Washington</td>
+                <td>349.78 million</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <th scope="row">USA</th>
+                <td>Washington</td>
+                <td>349.78 million</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <th scope="row">USA</th>
+                <td>Washington</td>
+                <td>349.78 million</td>
+                <td>English</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Production table-->
+
+    <!--The <colgroup> specifies a group of one or more colums in a
+    table for formatting-->
+
+    <table class="colgroup">
+      <!--  <col />
+        <colgroup span="2"></colgroup>
+        <colgroup span="2"></colgroup> -->
+        <colgroup>
+            <col span="1" class="pink">
+            <col span="2" class="red">
+            <col span="2" class="yellow">
+        </colgroup>
+        <tr>
+            <td rowspan="2"></td>
+            <th colspan="2">Saturn</th>
+            <th colspan="2"> Jupiter</th>
+        </tr>
+        <tr>
+            <th scope="col">Produced</th>
+            <th scope="col">Sold</th>
+            <th>Produced</th>
+            <th>Sold</th>
+        </tr>
+        <tr>
+            <th scope="row">cars</th>
+            <td>500000</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>500000</td>
+        </tr>
+        <tr>
+            <th scope="row">Cell phones</th>
+            <td>500000</td>
+            <td>500000</td>
+            <td>500000</td>
+            <td>500000</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

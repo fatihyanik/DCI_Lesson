@@ -1,0 +1,21 @@
+#title{
+    text-align: center;
+    background-color:whitesmoke;
+    color: black;
+}
+#article{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.692);
+    padding: 0.5em;
+    margin:0.5em;
+}
+
+.titleOfArticle{
+    text-align: center;
+}
+
+#food{
+    background-color: rgba(85, 71, 71, 0.466);
+    padding: 0.5em;
+    margin:0.5em;
+}
