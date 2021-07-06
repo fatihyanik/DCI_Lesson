@@ -1,13 +1,20 @@
-#rotation>ul {
+#rotation>ul,
+#translation>ul,
+#scaling>ul,
+#skewing>ul,
+#mix>ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0.5rem;
     gap: 2rem;
-    color:white
 }
 
-#rotation>ul>li {
+#rotation>ul>li,
+#translation>ul>li,
+#scaling>ul>li,
+#skewing>ul>li,
+#mix>ul>li {
     background-color: royalblue;
     flex-basis: 30%;
     height: 5rem;
@@ -15,41 +22,124 @@
 }
 
 #rotation>ul>li:nth-child(1) {
-    /*perwspective() function delivers the disance the pages surface and the imagines viewer in a 3D environment*/
+    /* perspective() function delivers the distance between the pages surface and the imagines viewer in a 3D environment. 
+    
+    https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective()
+    */
     transform: perspective(500px) rotateX(-45deg);
-    /*there are other units available
-    e.g turn(90deg = 0.5turn)*/
+    /* there are other units available
+    e.g. turn (90deg = 0.5turn )*/
 }
 
-#rotation>ul>li:nth-child(2){
+#rotation>ul>li:nth-child(2) {
     transform: perspective(800px) rotateY(0.6turn);
 }
 
-#rotation>ul>li:nth-child(3){
-    /*negative values go against clockwise*/
+#rotation>ul>li:nth-child(3) {
+    /* negative values go against clockwise */
     transform: rotateZ(-22.5deg);
 }
 
-#rotation>ul>li:nth-child(4){
-    /*negative values go against clockwise*/
+#rotation>ul>li:nth-child(4) {
+    /* negative values go against clockwise */
     transform: perspective(800px) rotateZ(-22.5deg) rotateX(25deg) rotateY(0.125turn);
 }
 
-#idea>h2{
+#rotation>h2 {
     background-color: lightsalmon;
     transition: all 1s;
 }
 
-#idea>h2:hover{
-    height: 10rem;
+#rotation>h2:hover {
+
     transform: perspective(800px) rotateY(45deg);
     transition: all 1s;
 }
 
-#translation>p>span{
-    color: red;
+#translation>ul>li:nth-child(1) {
+    transform: translateX(20px);
 }
 
-.updown{
-    transform: translateY(0.5rem);
+#translation>ul>li:nth-child(2) {
+    transform: translateY(20px);
+}
+
+#translation>ul>li:nth-child(3) {
+    /* Z-axis needs perspective again */
+    /* negative values shift elements away from us */
+    transform: perspective(500px) translateZ(-200px);
+}
+
+#translation>ul>li:nth-child(4) {
+    transform: translate(20px, 50px);
+}
+
+#translation>h2 {
+    background-color: lightgreen;
+    transition: all 1s;
+}
+
+#translation>h2:hover {
+    transform: perspective(800px)translateZ(500px) translateX(150px);
+    transition: all 5s ease-in;
+}
+
+#scaling>ul>li:nth-child(1) {
+    transform: scale(1.5);
+}
+
+#scaling>ul>li:nth-child(2) {
+    transform: scaleX(2);
+}
+
+#scaling>ul>li:nth-child(3) {
+    transform: scaleY(2);
+}
+
+#scaling>ul>li:nth-child(4) {
+    transform: perspective(40cm) scaleZ(5) rotateY(45deg);
+}
+
+#scaling>h2 {
+    background-color: lightcyan;
+    transition: all 1s;
+}
+
+#scaling>h2:hover {
+    transform: scale(1.5);
+    transition: all 5s ease-in;
+}
+
+#skewing>ul>li:nth-child(1) {
+    transform: skewX(45deg);
+}
+
+#skewing>ul>li:nth-child(2) {
+    transform: skewY(22.5deg);
+    transform-origin: left top;
+}
+
+#skewing>ul>li:nth-child(3) {
+    transform: skew(20deg, 20deg);
+}
+
+#mix>ul>li:nth-child(1) {
+    transform: skewX(30deg) translateY(20px) scale(0.75);
+}
+
+#mix>ul>li:nth-child(2) {
+    transform: scale(0.75) skewX(30deg) translateY(20px);
+}
+
+#mix>ul>li:nth-child(3) {
+    background: red;
+    transform: rotateZ(45deg) perspective(500px) rotateY(45deg);
+    /* a 2nd transform property overrides the first one */
+    transform: scale(2);
+}
+
+#mix>ul>li:nth-child(4) {
+    transform-origin: center;
+    transform: translateY(-50px);
+    transform: rotateZ(45deg);
 }

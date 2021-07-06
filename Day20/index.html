@@ -5,52 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transforms</title>
+    <link rel="stylesheet" href="commons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
         <h1>
             Transforming Elements
         </h1>
+        <nav></nav>
     </header>
     <main>
         <section id="idea">
-            <h2>
-                Idea
-            </h2>
-            <p>Idea: Use CSS property transform, to change the visual appearance of HTML elements.</p>
+            <h2>Idea</h2>
+            <p>Idea: Use CSS property transform, to change the visual appearance of HTML <strong>block level</strong> elements.</p>
             <h2>Ways to transform</h2>
             <ul>
-                <li>Rotation. needs an ankle (Winkel), and a choice of the axis, we want to rotate around</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Rotation. needs an angle (Winkel), and a choice of the axis, we want to rotate around, X and Y need a distance to the viewer (perspective-function)<br>
+                <code>transform: perspective(500px) rotateX(45deg)</code></li>
+                <li>Translations: is "shifting" an element along an axis. (Z again takes a distance with perspective)<br>
+                <code>
+                    transform: translateX(100px);
+                </code></li>
+                <li>Scaling: making things "bigger" or "smaller"<br>
+                <code>transform: scale(2);</code></li>
+                <li>Skewing: tilt/shift/collapse a shape with a given angle along an axis<br>
+                <code>
+                    transform: skewX(45deg);
+                </code></li>
             </ul>
+            <h2>Things to consider</h2>
+            <p>3D-transformations (everything that includes Z-dimension) needs a perspective()-call with a parameter describing the distance of the 2D surface to the viewer<br>
+            <code>
+                transform: perspective(15cm) rotateY(45deg);
+            </code></p>
+            <p>view-port (screen-width) effects 3D-transformations in combination with perspective-parameter</p>
+            <p>you can control, per element where the X and Y axis meet. CSS-property transform-origin<br>
+            <code>transform-origin: 20px 50px;</code></p>
+            <p>the order of functions applied to transform property matter.</p>
+            <p>an element can only have one value for the transform-property. <code class="right">transform: rotateY(45deg) translateX(50px) scale(1.5);</code>
+            <code class="wrong">transform: rotateY(45deg);<br>transform: translateX(50px);<br>transform: scale(1.5);</code></p>
         </section>
+
         <section id="rotation">
             <h2>Rotations</h2>
             <ul>
-                <li>x-axis</li>
-                <li>y-axis</li>
-                <li>z-axis</li>
+                <li>X axis</li>
+                <li>Y axis</li>
+                <li>Z axis</li>
                 <li>mixed</li>
             </ul>
         </section>
-        <section id="translation">
+
+        <section id="translation"> 
             <h2>Translation</h2>
-            <p>This Shifts an Element</p>
-            <p>Let's try, if this <span class="updown">ahahhahahhahaha </span>works with inline elemets</p>
+            <p>This Shifts an Element along an axis.</p>
+            <ul>
+                <li>shift to X</li>
+                <li>shift to Y</li>
+                <li>shift to Z</li>
+                <li>mixed</li>
+            </ul>
         </section>
 
         <section id="scaling">
             <h2>Scaling</h2>
-            <p>Makes bigger or smaller</p>
+            <p>Makes it bigger or smaller</p>
             <ul>
-                <li></li>
+                <li>Factor 2</li>
+                <li>only X</li>
+                <li>only Y</li>
+                <li>only Z</li>
+            </ul>
+        </section>
+
+
+        <section id="skewing">
+            <h2>Skewing</h2>
+            <p>Think of the <a href="https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa">Leaning tower of Pisa</a>, and font-style italic</p>
+            <ul>
+                <li>SkewX()</li>
+                <li>SkewY()</li>
+                <li>skew()</li>
+            </ul>
+        </section>
+
+        <section id="mix">
+            <h2>Mixing functions</h2>
+            <p>Mix different transforms. order can be important.</p>
+            <ul>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -59,8 +104,8 @@
         </section>
 
     </main>
-
-    <footer></footer>
+    <footer>&copy <a href="https://digitalcareerinstitute.org/" target="_blank">DCI</a> | André | July, 5<sup>th</sup>
+        2021</footer>
 </body>
 
 </html>
