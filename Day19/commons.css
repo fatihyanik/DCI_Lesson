@@ -1,0 +1,85 @@
+:root {
+    --headerbgcolor: lightslategrey;
+    --headercolor: white;
+    --navcolor: lightgrey;
+}
+
+
+body, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding-bottom: 0.5rem;
+    text-shadow: 5px 5px 2px black;;
+}
+
+/* default navigation*/
+
+header {
+    background-color: var(--headerbgcolor);
+    color: var(--headercolor);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    box-shadow: 0 5px 5px black;
+}
+
+nav {
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--navcolor);
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.25rem black;
+}
+
+nav::before {
+    content: "🧭\00A0";
+    display: inline;
+}
+
+nav>ul {
+    list-style: none;
+    padding:0;
+    width: 90%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+a:not([href*="#"])::after {
+    /* \00A0 is unicode for non-breakable space, and then the emoji for up-right-arrow*/
+    content: "\00A0↗️";
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+footer {
+    border-top: 3px dotted lightslategray;
+    padding: 1rem;
+}
+
+code.right {
+    display: block;
+    border: 1px dotted green;
+    background-color: lightgreen;
+}
+
+code.right::before {
+    content: "👍";
+    display: block;
+}
+
+code.wrong {
+    display: block;
+    border: 1px dotted red;
+    background-color: salmon;
+    text-decoration: line-through solid red 2px;
+}
+
+code.wrong::before {
+    content: "👎";
+    display: block;
+    text-decoration: none;
+}

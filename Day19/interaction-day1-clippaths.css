@@ -1,0 +1,87 @@
+
+
+header>h1 {
+    background-image: url("assets/water.jpg");
+    margin: 0px;
+    padding: 2rem;
+    clip-path: polygon(0 1rem, 100% 2rem, 100% calc(100% - 2rem), 0% 100%);
+}
+
+h1>a:link, h1>a:visited {
+    color: white;
+    text-decoration: underline dotted 3px;
+}
+
+header>aside {
+    margin-top: -1rem;
+    text-align: right;
+}
+
+nav>ul {
+    padding: 2px;
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+}
+
+nav::before {
+    content: "Page content: ";
+    display: inline;
+}
+
+main {
+    padding: 1rem;
+}
+
+section#polygon>div {
+    background-color: lightskyblue;
+    /* generate them from: https://bennettfeely.com/clippy/
+    */
+    clip-path: polygon(100% 0%, calc(100% - 50px) 50%, 100% 100%, 50px 100%, 0% 50%, 50px 0%);
+    padding: 5px 60px;
+}
+
+section#path>figure>div {
+    clip-path: path('M 230 80 A 45 45, 0, 1, 0, 275 125 L 275 80 Z');
+    background-color: purple;
+    height: 325px;
+    width: 325px;
+}
+
+section#circle>figure {
+    margin: 0.5rem;
+    border: 1px solid blue;
+}
+
+section#circle>figure>img {
+    clip-path: circle( 200px at 20% 20%);
+    /* margins do not affect the clipped area (only border>content) */
+    margin: 20px;
+    /*
+    border and border-radius, are applied before clipping
+*/
+    /*
+    border: 10px solid black;
+    border-radius: 20px;
+    */
+    width: 50%;
+    /* for circle function the params are:clip-path:
+    1. radius 
+    " at "
+    2. inset from the left;
+    2. inset from the top*/
+}
+
+span#experiment {
+    margin: 10px;
+    padding: 0 20px;
+    background: blue;
+    clip-path: polygon(100% 0%, calc(100% - 10px) 50%, 100% 100%, 10px 100%, 0% 50%, 10px 0%);
+}
+
+section#inset>div {
+    padding: 1rem;
+    background-color: royalblue;
+    clip-path: inset(20px 10px 50px 100px);
+}
+

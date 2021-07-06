@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements for Design</title>
+    <link rel="stylesheet" href="commons.css">
+    <link rel="stylesheet" href="interaction-day1-pseudos.css">
+</head>
+
+<body>
+    <header id="top">
+        <h1>Pseudo Elements for Design</h1>
+        <nav>
+            <ul>
+                <li><a href="#quote">Quotes</a></li>
+                <li><a href="#personlist">List+Marker</a></li>
+                <li><a href="#literature">Paragraphs</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">MDN:Pseudo-Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Idea</h2>
+            <p>We use pseudo elements (they begin with 2 double colons :: ) instead of adding additional markup<br>
+                advantage: keeps your html cleaner, easiert to read and maintain</p>
+        </section>
+        <section id="quote">
+            <h2>Example, pure text</h2>
+            <p>For the following blockquote element, I add decorative quotation marks at the beginning and end.</p>
+            <blockquote>
+                If you always do, what you always did, you will always get, what you always got.
+            </blockquote>
+        </section>
+        <section id="personlist">
+            <h2>Lists and Markers</h2>
+            <p>Here I exchange the bullets to a person emoji. Additionally I exchange the ::marker content for list
+                items with a style class="female"</p>
+            <ul id="people">
+                <li class="male">Ahmed</li>
+                <li>Barbera</li>
+                <li class="male">Chrisopher</li>
+                <li>Delphine</li>
+                <li class="male">Eric</li>
+                <li class="diverse">Francis</li>
+            </ul>
+        </section>
+
+        <section id="literature">
+            <h2>Nicer Literature</h2>
+            <div class="do-columns">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, saepe? Debitis est eos illum eum,
+                    neque
+                    fuga soluta ullam recusandae rem optio voluptatibus ut, voluptatum, quae exercitationem corporis non
+                    ratione.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, saepe? </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, saepe? </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, saepe? Debitis est eos illum eum,
+                    neque
+                    fuga soluta ullam recusandae rem optio voluptatibus ut, voluptatum, quae exercitationem corporis non
+                    ratione.</p>
+            </div>
+        </section>
+    </main>
+    <footer>&copy <a href="https://digitalcareerinstitute.org/" target="_blank">DCI</a> | André | July, 5<sup>th</sup>
+        2021</footer>
+</body>
+
+</html>

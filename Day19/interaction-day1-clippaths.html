@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clippaths</title>
+    <link rel="stylesheet" href="commons.css">
+    <link rel="stylesheet" href="interaction-day1-clippaths.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">Clip-Paths</a></h1>
+        <aside>Getting out of rectangular world</aside>
+
+        <nav>
+            <ul>
+                <li><a href="#circle">Circle</a></li>
+                <li><a href="#polygon">Polygon</a></li>
+                <li><a href="#path">Path</a></li>
+                <li><a href="#inset">Inset</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <p>Idea: we limit the displayed area of an element by applying a shape to clip on</p>
+        <ul>
+            <li>circle (radius at inset-left inset-top</li>
+            <li>ellipsis (radius-x radius-y at inset-left inset-right)</li>
+            <li>inset( top right bottom left )</li>
+            <li>polygon( list of pair coordinates )</li>
+            <li>path (SVG path syntax) </li>
+        </ul>
+        <p>Clip paths can be applied to block and inline elements</p>
+        <section id="circle">
+            <h2>Circular Clips</h2>
+            <p>This figure's img Element is clipped with the circle() funtion.</p>
+            <figure id="circle">
+                <img src="https://img2.goodfon.com/wallpaper/nbig/9/ce/background-water-voda-fon.jpg">
+                <figcaption>Water image limited to a circular clippath of 200px radius at insets of 20% from left and
+                    top</figcaption>
+            </figure>
+        </section>
+
+        <section id="polygon">
+            <h2>Polygons</h2>
+            <div>
+                <p>Can you see, I was clipped with a polygon (list of coordinate pairs (x-inset y-inset)) created with
+                    <a href="https://bennettfeely.com/clippy/">https://bennettfeely.com/clippy/</a> to achieve this
+                    arrow-shape</p>
+                <p>It can also be applied to an<span id="experiment">Inline element</span>.</p>
+            </div>
+        </section>
+
+        <section id="path">
+            <h2>SVG-Paths</h2>
+            <p>the following shape was created with the path()-Funktion using <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">SVG-Syntax</a> (super
+                universal, but hard to write on your own)</p>
+            <figure>
+                <div id="style"></div>
+                <figcaption>generic division element clipped with a SVG path</figcaption>
+            </figure>
+        </section>
+
+        <section id="inset">
+            <h2>Insets from each sides</h2>
+            <p>this will keep rectangular, but limit the displayed area</p>
+            <div>
+                <p>You will not be able to read everything on each side</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>&copy <a href="https://digitalcareerinstitute.org/" target="_blank">DCI</a> | André | July, 5<sup>th</sup>
+        2021</footer>
+</body>
+
+</html>

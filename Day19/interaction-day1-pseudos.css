@@ -1,0 +1,59 @@
+
+/* surround a quote with nice quotation signs << Quote >> */
+blockquote::before {
+    /* the \ + code is a unicode encoding, since we
+    are in CSS not HTML, we can't use named entities like &laquo; */
+    content: "\00AB";
+}
+
+blockquote::after {
+    content: "\00BB";
+}
+
+/* Playing with ::markers and list-style */
+
+ul#people {
+    list-style-type: "👩";
+    list-style-position: inside;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* control marker for specific style classes */
+li.male::marker {
+    content: "👨\00A0";
+}
+
+li.diverse::marker {
+    content: "🧑\00A0";
+}
+
+#literature .do-columns {
+    columns: 3;
+}
+
+/* create initials per paragraph */
+#literature p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* make a decoration without additional markup */
+#literature p::after {
+    height: 1em;
+    margin-top: 0.5em;
+    /* important: always need content */
+    content: "";
+    /* here I add a centered decorative image */
+    background-image: url("assets/divider.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* default is inline, 
+    to fill all space, make it block*/
+    display: block;
+   
+}
