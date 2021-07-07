@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow:hidden ;
+}
+
+.ball {
+    position: absolute;
+    bottom: 30vh;
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    clip-path: circle();
+    /*border-radius: 50%;*/
+
+    /*
+    chain two animations - apply two animations at the same time to the same element
+    The forward movement should be smooth (linear)
+    For the up-down animation we need to apply ease-in-out to get that "bounce"*/
+
+    /*animation-shorthand*/
+    animation: forward 5s infinite linear,
+        bouncing 0.7s 0.5s infinite ease-in-out;
+}
+
+.ground {
+    position: absolute;
+    top: 70vh;
+    border-top: 20px solid #333;
+    left: 0;
+    width: 100%;
+}
+
+/*This moves the ball forward*/
+@keyframes forward{
+    0%{
+        left:0;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes bouncing {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-240px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
