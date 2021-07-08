@@ -1,0 +1,55 @@
+:root {
+    --pi: 3.14159526;
+}
+
+main {
+    height: 10rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 158, 255, 1) 100%);
+    display: flex;
+    /* justify-content: flex-start;
+    align-items: flex-end;*/
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+figure {
+    margin: 0;
+    width: 5rem;
+    height: 5rem;
+    background: url(./coin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid gold;
+    border-radius: 2.5rem;
+    animation-duration: 2s, 500ms;
+    animation-name: rotatecoin, falldown;
+    animation-delay: 0s, 2s;
+    animation-timing-function: ease-in-out, ease-in-out;
+  /*  animation-iteration-count: 5;
+    animation-direction:alternate;*/
+  /*  animation-fill-mode: forwards; */
+}
+
+
+@keyframes rotatecoin {
+    from {
+        transform-origin:center center;
+        transform:translateX(0px) rotateZ(0turn) ;
+    } 
+
+    to {
+        transform: translateX(calc(2.5rem *2 * var(--pi))) rotateZ(1turn); 
+    }
+}
+
+@keyframes falldown{
+    from{
+        transform: translateX(calc(2.5rem *2 * var(--pi))); 
+    }
+
+    to{
+        transform-origin: center bottom;
+        transform: translateX(calc(2.5rem *2 * var(--pi))) perspective(100px) rotateX(80deg); 
+    }
+}
